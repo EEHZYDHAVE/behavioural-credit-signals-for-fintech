@@ -1,14 +1,14 @@
 # Expanding Access to "Credit Invisible" Segments
 
-**Project Outline — High-Growth Underwriting: Discovering Behavioral Signals for Credit-Invisible Borrowers**
+**High-Growth Underwriting: Discovering Behavioral Signals for Credit-Invisible Borrowers**
 
 <hr>
 
 ## 1. Project Background & Industry Context
 
-Fintech lenders pursuing rapid growth often look beyond traditional banked customers toward credit-invisible or thin-file users — individuals with limited or no formal credit history. These users, frequently younger and from non-traditional educational backgrounds, are typically excluded by legacy credit scoring systems despite being economically active.
+Fintech lenders pursuing rapid growth often look beyond traditional banked customers toward credit-invisible or thin-file users, individuals with limited or no formal credit history. These users, frequently younger and from non-traditional educational backgrounds, are typically excluded by legacy credit scoring systems despite being economically active.
 
-For fintechs, lending to these segments represents a clear growth opportunity. However, the absence of reliable bureau-based data introduces uncertainty around borrower risk. Traditional demographic proxies — such as education level or marital status — are often used in place of credit history, but their effectiveness in predicting repayment behavior remains limited and inconsistent.
+For fintechs, lending to these segments represents a clear growth opportunity. However, the absence of reliable bureau-based data introduces uncertainty around borrower risk. Traditional demographic proxies, such as education level or marital status, are often used in place of credit history, but their effectiveness in predicting repayment behavior remains limited and inconsistent.
 
 As a result, fintechs are increasingly pushed to explore whether behavioral information embedded in payment history can provide more reliable insight into creditworthiness than static borrower attributes.
 
@@ -16,7 +16,7 @@ As a result, fintechs are increasingly pushed to explore whether behavioral info
 
 ## 2. The Problem Statement
 
-> Our Fintech aims to capture market share by lending to **"Credit Invisible"** or **"Thin-File"** borrowers — specifically younger users and those with non-traditional educational backgrounds — who are typically rejected by legacy banks. However, aggressive expansion into these segments risks a spike in Non-Performing Loans (NPLs). The challenge is to identify alternative behavioral signals within payment history that can predict creditworthiness better than a static demographic profile.
+> Our Fintech aims to capture market share by lending to **"Credit Invisible"** or **"Thin-File"** borrowers, specifically younger users and those with non-traditional educational backgrounds, who are typically rejected by legacy banks. However, aggressive expansion into these segments risks a spike in Non-Performing Loans (NPLs). The challenge is to identify alternative behavioral signals within payment history that can predict creditworthiness better than a static demographic profile.
 
 <hr>
 
@@ -36,22 +36,22 @@ Specifically, the problem is to identify alternative behavioral signals within p
 
 The following questions structure the analytical investigation and define what this project must answer.
 
-### Q1 — Establishing the Baseline
+### Q1 Establishing the Baseline
 > What demographic proxies are currently used to assess creditworthiness for credit-invisible borrowers, and how well do they predict NPL outcomes?
 
-Before introducing behavioral signals, we must first evaluate what lenders rely on today — age, education level, marital status — and measure how effectively those proxies actually predict loan performance for credit-invisible segments.
+Before introducing behavioral signals, we must first evaluate what lenders rely on today, age, education level, marital status, and measure how effectively those proxies actually predict loan performance for credit-invisible segments.
 
-### Q2 — Discovering Behavioral Signals
+### Q2 Discovering Behavioral Signals
 > What payment behaviors separate good borrowers from bad ones (e.g., consistency, frequency, partial payments)?
 
-This is the core discovery question. It explores which observable patterns in payment activity — such as regularity, timing, partial repayments, or early signs of stress — correlate with positive or negative credit outcomes.
+This is the core discovery question. It explores which observable patterns in payment activity, such as regularity, timing, partial repayments, or early signs of stress, correlate with positive or negative credit outcomes.
 
-### Q3 — Comparing Signal Quality
+### Q3 Comparing Signal Quality
 > Do behavioral payment signals outperform demographic proxies in explaining creditworthiness outcomes, and under what conditions?
 
-This question tests the central hypothesis of the project in an open and honest way — leaving room for findings to go in either direction. It also asks under what conditions behavioral signals are more or less reliable, adding analytical nuance beyond a simple yes/no comparison.
+This question tests the central hypothesis of the project in an open and honest way, leaving room for findings to go in either direction. It also asks under what conditions behavioral signals are more or less reliable, adding analytical nuance beyond a simple yes/no comparison.
 
-### Q4 — Borrower Profile Segmentation
+### Q4 Borrower Profile Segmentation
 > Which borrower profiles within the credit-invisible segment show the most predictable repayment behavior?
 
 "Credit invisible" is not a uniform group. A 22-year-old recent graduate and a 35-year-old informal trader may both lack credit scores but behave very differently. Identifying which sub-profiles are safer to lend to makes the project directly actionable for a fintech's underwriting strategy.
@@ -62,7 +62,7 @@ This question tests the central hypothesis of the project in an open and honest 
 
 Rather than starting with predefined underwriting rules, this project focuses on discovering behavioral patterns that emerge naturally from payment activity over time.
 
-Demographic variables are first evaluated on their own merit as predictors of NPL outcomes — reflecting how credit-invisible borrowers are commonly assessed today. Their performance establishes the baseline against which behavioral signals are tested. Behavioral signals derived from payment history are then explored as potential alternatives — not assumed replacements, but candidates to be rigorously compared against observed outcomes.
+Demographic variables are first evaluated on their own merit as predictors of NPL outcomes, reflecting how credit-invisible borrowers are commonly assessed today. Their performance establishes the baseline against which behavioral signals are tested. Behavioral signals derived from payment history are then explored as potential alternatives, not assumed replacements, but candidates to be rigorously compared against observed outcomes.
 
 This two-stage approach ensures the project remains analytically honest: if demographic proxies perform well in certain conditions, that finding is equally valuable to a fintech making risk decisions.
 
@@ -76,7 +76,7 @@ In this project, creditworthiness is understood in practical, portfolio-relevant
 - Persistent delinquency
 - Transition into non-performing loan (NPL) status
 
-These outcomes serve as the reference point against which behavioral patterns in payment history are evaluated. The emphasis is on how borrowers behave over time — allowing patterns of consistency, volatility, or deterioration to emerge organically from the data.
+These outcomes serve as the reference point against which behavioral patterns in payment history are evaluated. The emphasis is on how borrowers behave over time, allowing patterns of consistency, volatility, or deterioration to emerge organically from the data.
 
 <hr>
 
