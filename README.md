@@ -12,13 +12,13 @@ For fintechs, lending to these segments represents a clear growth opportunity. H
 
 As a result, fintechs are increasingly pushed to explore whether behavioral information embedded in payment history can provide more reliable insight into creditworthiness than static borrower attributes.
 
-<hr>
+
 
 ## 2. The Problem Statement
 
 > Our Fintech aims to capture market share by lending to **"Credit Invisible"** or **"Thin-File"** borrowers, specifically younger users and those with non-traditional educational backgrounds, who are typically rejected by legacy banks. However, aggressive expansion into these segments risks a spike in Non-Performing Loans (NPLs). The challenge is to identify alternative behavioral signals within payment history that can predict creditworthiness better than a static demographic profile.
 
-<hr>
+
 
 ## 3. The Business Problem
 
@@ -30,7 +30,7 @@ Aggressive expansion into thin-file segments can accelerate customer acquisition
 
 Specifically, the problem is to identify alternative behavioral signals within payment history that can indicate repayment reliability more effectively than static demographic profiles alone.
 
-<hr>
+
 
 ## 4. Problem Questions
 
@@ -56,7 +56,7 @@ This question tests the central hypothesis of the project in an open and honest 
 
 "Credit invisible" is not a uniform group. A 22-year-old recent graduate and a 35-year-old informal trader may both lack credit scores but behave very differently. Identifying which sub-profiles are safer to lend to makes the project directly actionable for a fintech's underwriting strategy.
 
-<hr>
+
 
 ## 5. Analytical Focus: Behavioral Signals vs. Demographic Proxies
 
@@ -66,7 +66,7 @@ Demographic variables are first evaluated on their own merit as predictors of NP
 
 This two-stage approach ensures the project remains analytically honest: if demographic proxies perform well in certain conditions, that finding is equally valuable to a fintech making risk decisions.
 
-<hr>
+
 
 ## 6. Interpreting Creditworthiness Through Outcomes
 
@@ -78,7 +78,7 @@ In this project, creditworthiness is understood in practical, portfolio-relevant
 
 These outcomes serve as the reference point against which behavioral patterns in payment history are evaluated. The emphasis is on how borrowers behave over time, allowing patterns of consistency, volatility, or deterioration to emerge organically from the data.
 
-<hr>
+
 
 ## 7. Project Goal
 
@@ -101,7 +101,7 @@ Specifically, the project aims to:
 ### Objective
 Evaluate how well traditional demographic proxies; age, education, employment type, marital status — predict loan default outcomes among credit-invisible borrowers, and establish a measurable baseline for Part 2.
 
----
+
 
 ### Dataset
 **Source:** [Home Credit Default Risk: Kaggle](https://www.kaggle.com/competitions/home-credit-default-risk/data)
@@ -112,7 +112,7 @@ Evaluate how well traditional demographic proxies; age, education, employment ty
 | `bureau.csv` | Used to identify and exclude borrowers with external credit history |
 | `previous_application.csv` | Used to identify and exclude borrowers with prior Home Credit history |
 
----
+
 
 ### Tools
 | Tool | Purpose |
@@ -122,7 +122,7 @@ Evaluate how well traditional demographic proxies; age, education, employment ty
 | Matplotlib / Seaborn | Data visualization |
 | SciPy | Statistical testing: Chi-square, Cramér's V, Point-biserial correlation |
 
----
+
 
 ### Stages
 
