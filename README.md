@@ -93,3 +93,61 @@ Specifically, the project aims to:
 5. Provide clear, interpretable insights that can inform early-stage underwriting exploration and risk assessment
 
 > The focus is not on building a complex predictive model, but on making behavioral risk **visible**, **understandable**, and **relevant** to real-world growth decisions.
+
+<hr>
+
+## Part 1 Project Plan: Do Demographic Proxies Predict NPL Outcomes for Credit-Invisible Borrowers?
+
+### Objective
+Evaluate how well traditional demographic proxies; age, education, employment type, marital status — predict loan default outcomes among credit-invisible borrowers, and establish a measurable baseline for Part 2.
+
+---
+
+### Dataset
+**Source:** [Home Credit Default Risk: Kaggle](https://www.kaggle.com/competitions/home-credit-default-risk/data)
+
+| File | Purpose |
+|---|---|
+| `application_train.csv` | Primary table: borrower demographics, loan details, and TARGET variable |
+| `bureau.csv` | Used to identify and exclude borrowers with external credit history |
+| `previous_application.csv` | Used to identify and exclude borrowers with prior Home Credit history |
+
+---
+
+### Tools
+| Tool | Purpose |
+|---|---|
+| Google Colab | Development environment |
+| Python (Pandas, NumPy) | Data loading, filtering, and manipulation |
+| Matplotlib / Seaborn | Data visualization |
+| SciPy | Statistical testing: Chi-square, Cramér's V, Point-biserial correlation |
+
+---
+
+### Stages
+
+**Stage 1 Isolate the Credit-Invisible Population**
+Filter `application_train.csv` by removing any borrower with a matching record in `bureau.csv` or `previous_application.csv`. The remaining borrowers those with no external or internal credit history, form the study population.
+
+**Stage 2 Population Audit**
+Assess the size of the filtered population, compare NPL rates inside vs. outside the filter, and examine class distribution of the TARGET variable.
+
+**Stage 3 Variable Classification**
+Categorize all available columns into three explicit buckets before any analysis begins, pure demographic proxies, loan request characteristics, and soft stability signals. Exclude `EXT_SOURCE_1/2/3` and all building-related normalized columns and document the exclusions.
+
+**Stage 4 Exploratory Data Analysis**
+Examine distributions of key demographic variables, convert `DAYS_BIRTH` to readable age in years, and check for missing values or data quality issues that need to be addressed before analysis.
+
+**Stage 5 Univariate Signal Evaluation**
+Test each demographic proxy individually against the TARGET variable. Categorical variables are assessed using Chi-square tests and Cramér's V. Continuous variables are assessed using point-biserial correlation. Output is a ranked table of variables by signal strength, strongest to weakest.
+
+**Stage 6 Subgroup Profiling**
+Cross-tabulate key demographic combinations, age group, education level, employment type and observe how NPL rates shift across combined profiles. This produces a human-readable picture of which borrower profiles within the credit-invisible segment carry the most and least risk.
+
+**Stage 7 Baseline Verdict**
+Summarize findings in plain language: which proxies carried meaningful signal, which carried almost none, and what the combined profiles reveal. This verdict becomes the measurable baseline that Part 2 will challenge with behavioral payment signals.
+
+---
+
+### What This Feeds Into
+The signal strength rankings and baseline NPL rates produced in Part 1 become the benchmark for Part 2, where behavioral signals from `installments_payments.csv` are tested against the same population and compared directly against these results.
