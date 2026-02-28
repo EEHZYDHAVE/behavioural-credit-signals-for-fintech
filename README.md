@@ -126,25 +126,19 @@ Evaluate how well traditional demographic proxies; age, education, employment ty
 
 ### Stages
 
-**Stage 1 Isolate the Credit-Invisible Population**
-Filter `application_train.csv` by removing any borrower with a matching record in `bureau.csv` or `previous_application.csv`. The remaining borrowers those with no external or internal credit history, form the study population.
-
-**Stage 2 Population Audit**
-Assess the size of the filtered population, compare NPL rates inside vs. outside the filter, and examine class distribution of the TARGET variable.
-
-**Stage 3 Variable Classification**
+**Stage 1 Variable Classification**
 Categorize all available columns into three explicit buckets before any analysis begins, pure demographic proxies, loan request characteristics, and soft stability signals. Exclude `EXT_SOURCE_1/2/3` and all building-related normalized columns and document the exclusions.
 
-**Stage 4 Exploratory Data Analysis**
+**Stage 2 Exploratory Data Analysis**
 Examine distributions of key demographic variables, convert `DAYS_BIRTH` to readable age in years, and check for missing values or data quality issues that need to be addressed before analysis.
 
-**Stage 5 Univariate Signal Evaluation**
+**Stage 3 Univariate Signal Evaluation**
 Test each demographic proxy individually against the TARGET variable. Categorical variables are assessed using Chi-square tests and Cramér's V. Continuous variables are assessed using point-biserial correlation. Output is a ranked table of variables by signal strength, strongest to weakest.
 
-**Stage 6 Subgroup Profiling**
+**Stage 4 Subgroup Profiling**
 Cross-tabulate key demographic combinations, age group, education level, employment type and observe how NPL rates shift across combined profiles. This produces a human-readable picture of which borrower profiles within the credit-invisible segment carry the most and least risk.
 
-**Stage 7 Baseline Verdict**
+**Stage 5 Baseline Verdict**
 Summarize findings in plain language: which proxies carried meaningful signal, which carried almost none, and what the combined profiles reveal. This verdict becomes the measurable baseline that Part 2 will challenge with behavioral payment signals.
 
 ---
